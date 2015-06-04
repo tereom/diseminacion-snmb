@@ -15,6 +15,9 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# MEDIA_ROOT = '/home/username/dbe/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'dbe/media/')
+MEDIA_URL = '/media/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -37,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'fotos',
 )
 
 MIDDLEWARE_CLASSES = (
